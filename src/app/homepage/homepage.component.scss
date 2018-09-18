@@ -1,0 +1,7 @@
+.contained-block {
+  padding: 0 10px;
+
+  @media all and (min-width: 1024px) {
+    padding: 0 125px;
+  }
+}

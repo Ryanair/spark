@@ -1,0 +1,85 @@
+.faqs-container {
+  display: flex;
+  flex-direction: column;
+
+  @media all and (min-width: 1024px) {
+    flex-direction: row;
+  }
+
+  .faqs-questions {
+    border-bottom: 1px solid #dcdcdc;
+    flex-shrink: 0;
+    margin-bottom: 15px;
+    width: 250px;
+
+    @media all and (min-width: 1024px) {
+      border-bottom: 0 none;
+      border-right: 1px solid #dcdcdc;
+      margin: 15px 15px 0 0;
+      padding-right: 15px;
+    }
+
+    &__input {
+      display: none;
+    }
+
+    &__item {
+      color: #636363;
+      cursor: pointer;
+      display: block;
+      margin-bottom: 15px;
+
+      &--select {
+        background-color: #6813e8;
+        color: #fff;
+      }
+    }
+  }
+
+  .faqs-answers {
+    color: #636363;
+    line-height: 25px;
+
+    @media all and (min-width: 1024px) {
+      flex-grow: 1;
+      padding: 0 25px 25px;
+    }
+
+    &__item {
+      display: none;
+    }
+  }
+
+  #question-0:checked ~ .faqs-questions #label-0,
+  #question-1:checked ~ .faqs-questions #label-1,
+  #question-2:checked ~ .faqs-questions #label-2,
+  #question-3:checked ~ .faqs-questions #label-3,
+  #question-4:checked ~ .faqs-questions #label-4,
+  #question-5:checked ~ .faqs-questions #label-5,
+  #question-6:checked ~ .faqs-questions #label-6,
+  #question-7:checked ~ .faqs-questions #label-7,
+  #question-8:checked ~ .faqs-questions #label-8,
+  #question-9:checked ~ .faqs-questions #label-9,
+  #question-10:checked ~ .faqs-questions #label-10,
+  #question-11:checked ~ .faqs-questions #label-11 {
+    background-color: #6813e8;
+    border-radius: 3px;
+    color: #fff;
+    padding: 10px;
+  }
+
+  #question-0:checked ~ .faqs-answers #answer-0,
+  #question-1:checked ~ .faqs-answers #answer-1,
+  #question-2:checked ~ .faqs-answers #answer-2,
+  #question-3:checked ~ .faqs-answers #answer-3,
+  #question-4:checked ~ .faqs-answers #answer-4,
+  #question-5:checked ~ .faqs-answers #answer-5,
+  #question-6:checked ~ .faqs-answers #answer-6,
+  #question-7:checked ~ .faqs-answers #answer-7,
+  #question-8:checked ~ .faqs-answers #answer-8,
+  #question-9:checked ~ .faqs-answers #answer-9,
+  #question-10:checked ~ .faqs-answers #answer-10,
+  #question-11:checked ~ .faqs-answers #answer-11 {
+    display: block;
+  }
+}

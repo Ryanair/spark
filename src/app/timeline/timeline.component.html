@@ -1,0 +1,40 @@
+<div class="std-container">
+  <div class="background background--b background--l background--orange shadow"></div>
+
+  <div class="foreground shadow">
+    <div class="title">The Spark timeline</div>
+    <div class="description">Here are the key dates you need to be aware of on your Spark journey.</div>
+
+    <div class="timeline-container">
+      <div class="timeline background--orange">
+        <div *ngFor="let point of points" class="timeline__point" [class.timeline__point--reverse]="point.reverse">
+          <div *ngIf="point.title" class="point-info">
+            <div>
+              <div class="point-info__title">{{ point.title }}</div>
+              <div>{{ point.description }}</div>
+            </div>
+            <div class="point-info__date date" [innerHTML]="point.date"></div>
+          </div>
+          <div class="point-icon"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="finale">
+      <div class="finale__flavor">
+        <div class="finale__logo" inlineSVG="spark-logo.svg"></div>
+      </div>
+      <div>
+        <div class="finale__title">Spark Day</div>
+        <div class="finale__description">
+          Teams have 24 hours to design, develop and demonstrate their ideas. Pizza and red bull
+          will be flowing as teams race against time to find out who will be the first ever SPARK
+          champion, culminating in a final pitch session to senior executives from across the
+          business.<br/>
+          <span class="finale__description-note">Spark Day will run from 2pm Thu 4th to 2pm Fri 5th, followed by the showcase.</span><br/>
+          <a routerLink="/submit.html" class="finale__description-link" title="Submit an idea now!">Submit an idea now!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

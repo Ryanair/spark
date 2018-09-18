@@ -1,0 +1,22 @@
+<div *ngIf="isToggled; else videoToggle" class="video">
+  <iframe
+      class="video__player"
+      src="https://player.vimeo.com/video/284134437?title=0&byline=0&portrait=0"
+      frameborder="0"
+      webkitallowfullscreen
+      mozallowfullscreen
+      allowfullscreen>
+  </iframe>
+  <script src="https://player.vimeo.com/api/player.js"></script>
+</div>
+<ng-template #videoToggle>
+  <div class="video-toggle" (click)="toggle()">
+    play
+  </div>
+</ng-template>
+
+<app-tagline></app-tagline>
+
+<div class="submit">
+  <a title="Submit idea" routerLink="/submit.html">Submit idea</a>
+</div>

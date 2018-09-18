@@ -1,0 +1,19 @@
+<div class="post" [class.post--reversed]="reverseImagePosition">
+  <div class="image-container">
+    <div class="background background--b background--r background--orange shadow"></div>
+
+    <img
+        alt="title"
+        class="image-container__image foreground"
+        [src]="image"/>
+  </div>
+
+  <div class="text">
+    <div class="title text__title">{{ title }}</div>
+    <div class="description text__description" [innerHTML]="description"></div>
+    <div class="text__link">
+      <a class="text__link-item" [routerLink]="'/' + linkLocation">{{ linkText }}</a>
+      <span class="text__link-decorator">&gt;</span>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+<div class="std-container">
+  <div class="background background--b background--l background--orange shadow"></div>
+
+  <div class="foreground shadow">
+    <div class="title">FAQ's</div>
+
+    <div class="faqs-container">
+      <ng-container *ngFor="let question of questions; let index = index">
+        <input
+            class="faqs-questions__input"
+            type="radio"
+            name="ch"
+            [id]="'question-' + index"
+            [attr.checked]="index === 0 ? 'checked' : null"/>
+      </ng-container>
+
+      <div class="faqs-questions">
+        <ng-container *ngFor="let question of questions; let index = index">
+          <label
+              class="faqs-questions__item"
+              [for]="'question-' + index"
+              [id]="'label-' + index">
+            {{ question }}
+          </label>
+        </ng-container>
+      </div>
+
+      <div class="faqs-answers">
+        <div
+            *ngFor="let answer of answers; let index = index"
+            class="faqs-answers__item"
+            [id]="'answer-' + index"
+            [innerHTML]="answer">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

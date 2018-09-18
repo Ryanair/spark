@@ -1,0 +1,13 @@
+<app-video-block></app-video-block>
+<div class="contained-block">
+  <app-promo-block></app-promo-block>
+  <app-post
+      *ngFor="let post of posts"
+      [image]="post.image"
+      [reverseImagePosition]="post.reverseImagePosition"
+      [title]="post.title"
+      [description]="post.description"
+      [linkText]="post.linkText"
+      [linkLocation]="post.linkLocation">
+  </app-post>
+</div>

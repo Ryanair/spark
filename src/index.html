@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <base href="/">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spark - Ryanair</title>
+  </head>
+  <body>
+    <app-root></app-root>
+
+    <script type="text/javascript">
+      (function() {
+        const attachmentEl = document.getElementById('attachment');
+        if (attachmentEl) {
+          attachmentEl.addEventListener('change', () => {
+            const fileSizeInKB = attachmentEl.files[0].size / 1024;
+            if (fileSizeInKB > 100) {
+              attachmentEl.value = null;
+            }
+          });
+        }
+      })();
+    </script>
+
+    <script type="text/javascript">
+      window._mfq = window._mfq || [];
+      (function() {
+        // if (!window.location.href.match('submit')) {
+        var mf = document.createElement('script');
+        mf.type = 'text/javascript';
+        mf.async = true;
+        mf.src = '//cdn.mouseflow.com/projects/5e90a396-463b-4951-80e4-fba6d074bdf9.js';
+        document.getElementsByTagName('head')[0].appendChild(mf);
+        // }
+      })();
+    </script>
+  </body>
+</html>

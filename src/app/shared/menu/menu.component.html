@@ -1,0 +1,39 @@
+<!--<div class="links" [class.links&#45;&#45;toggled]="isToggled">-->
+<div class="links">
+  <a
+      class="links__item"
+      title="Home"
+      routerLink="/index.html"
+      routerLinkActive="links__item--active"
+      [routerLinkActiveOptions]="{ exact: true }">
+    Home
+  </a>
+  <a
+      class="links__item"
+      title="Timeline"
+      routerLink="/timeline.html"
+      routerLinkActive="links__item--active">
+    Timeline
+  </a>
+  <a
+      class="links__item"
+      title="FAQ\'s"
+      routerLink="/faqs.html"
+      routerLinkActive="links__item--active">
+    FAQ's
+  </a>
+  <a
+      class="links__item"
+      title="Meet The Team"
+      routerLink="/meet-the-team.html"
+      routerLinkActive="links__item--active">
+    Meet The Team
+  </a>
+  <a
+      class="links__item links__submit"
+      title="Submit"
+      routerLink="/submit.html"
+      routerLinkActive="links__item--active links__submit--active">
+    Submit
+  </a>
+</div>

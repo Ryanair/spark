@@ -1,0 +1,16 @@
+<div class="background background--t background--r shadow"></div>
+
+<div class="foreground shadow">
+  <div class="promo-blocks">
+    <div class="promo-block" *ngFor="let block of blocks">
+      <div class="promo-block__icon" [inlineSVG]="block.icon"></div>
+      <div class="title promo-block__title">{{ block.title }}</div>
+      <div class="description promo-block__description">{{ block.description }}</div>
+    </div>
+    <!--<div class="promo-blocks__separator"></div>-->
+  </div>
+
+  <a class="timeline" title="Timeline" routerLink="/timeline.html">
+    Check out the full timeline of Spark
+  </a>
+</div>

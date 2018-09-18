@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,400,700");
+
+html {
+  box-sizing: border-box;
+  font-family: Raleway, sans-serif;
+}
+
+*,
+*:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: #fff url("/assets/img/poly-background.svg") center top/100% 800px no-repeat;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+button {
+  background-color: transparent;
+  border: 0 none;
+  padding: 0;
+}
+
+.container {
+  height: auto;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.purple {
+  color: #6813e8;
+}
+
+.shadow {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.std-container {
+  margin: 0 10px 0 20px;
+  position: relative;
+
+  @media all and (min-width: 1024px) {
+    margin: 50px 150px;
+  }
+}
+
+.foreground {
+  background-color: #fff;
+  margin-bottom: 50px;
+  padding: 25px;
+  position: relative;
+  z-index: 10;
+
+  @media all and (min-width: 1024px) {
+    padding: 50px 30px;
+  }
+}
+
+.background {
+  background-color: #fff;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+
+  @media all and (min-width: 1024px) {
+    height: 100%;
+  }
+}
+
+.background--orange {
+  background-image: linear-gradient(200deg, #fb9b2a, #fab226);
+}
+
+.background--b {
+  top: 10px;
+
+  @media all and (min-width: 1024px) {
+    top: 20px;
+  }
+}
+
+.background--l {
+  left: -10px;
+
+  @media all and (min-width: 1024px) {
+    left: -20px;
+  }
+}
+
+.background--r {
+  left: 10px;
+
+  @media all and (min-width: 1024px) {
+    left: 20px;
+  }
+}
+
+.background--t {
+  top: -10px;
+
+  @media all and (min-width: 1024px) {
+    top: -20px;
+  }
+}
+
+.title {
+  color: #6813e8;
+  font-size: 18px;
+  margin-bottom: 10px;
+
+  @media all and (min-width: 1024px) {
+    font-size: 24px;
+  }
+}
+
+.description {
+  color: #636363;
+  font-size: 14px;
+  margin-bottom: 15px;
+
+  @media all and (min-width: 1024px) {
+    font-size: 16px;
+  }
+}

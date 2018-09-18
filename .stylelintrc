@@ -1,0 +1,11 @@
+{
+  "extends": "stylelint-config-ryanair",
+  "plugins": [
+    "stylelint-order"
+  ],
+  "rules": {
+    "max-nesting-depth": null,
+    "selector-max-class": null,
+    "selector-max-id": null
+  }
+}

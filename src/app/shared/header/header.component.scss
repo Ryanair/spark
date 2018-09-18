@@ -1,0 +1,87 @@
+:host {
+  display: block;
+  padding: 10px;
+
+  @media all and (min-width: 1024px) {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+  }
+
+  @media all and (min-width: 1200px) {
+    padding: 30px 50px;
+  }
+}
+
+.row {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+  @media all and (min-width: 1024px) {
+    display: inline-flex;
+  }
+}
+
+.brand {
+  align-items: center;
+  display: flex;
+
+  &__logo {
+    fill: #fff;
+    margin-right: 10px;
+    width: 70px;
+
+    @media all and (min-width: 1024px) {
+      width: 140px;
+    }
+  }
+
+  &__title {
+    font-size: 26px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    @media all and (min-width: 1024px) {
+      font-size: 48px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 12px;
+    font-weight: 100;
+
+    @media all and (min-width: 1024px) {
+      font-size: 18px;
+    }
+  }
+}
+
+//.toggle {
+//  display: flex;
+//  flex-direction: column;
+//  height: 35px;
+//  justify-content: space-around;
+//
+//  @media all and (min-width: 1024px) {
+//    display: none;
+//  }
+//
+//  &__bar {
+//    background-color: #fff;
+//    border-radius: 10px;
+//    display: block;
+//    height: 5px;
+//    padding: 0 5px;
+//    width: 25px;
+//  }
+//}
+
+.header-menu {
+  border-top: 1px solid #fff;
+
+  @media all and (min-width: 1024px) {
+    border-top: 0 none;
+  }
+}
